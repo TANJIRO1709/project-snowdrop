@@ -37,14 +37,14 @@ const Gallery = () => {
         <Slider {...settings}>
           {logos.map((logo, index) => (
             <div key={index} className="container flex">
-              <Image
+              <img
                 src={logo}
                 alt="logo"
                 width={600}
                 height={420}
                 loading="eager"
                 className="h-14 w-auto sm:h-24 m-auto"
-              />
+              style={{height: "420px", width:"300px"}}/>
             </div>
           ))}
         </Slider>
